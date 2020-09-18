@@ -1,0 +1,3 @@
+
+OBJECT SET VISIBLE:C603(*; "ruler.scale"; Self:C308->=1)
+SET TIMER:C645(-1)

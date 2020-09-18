@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="15">
+	<com.4d>
+		<database>
+			<cache size_fixed="32" size_maximum="100" size_reserved="128"/>
+			<cpu_priority/>
+			<misc standard_xpath="false"/>
+		</database>
+		<compiler>
+			<options compilation_path="3" fat_binary="true"/>
+			<typage default_for_button="2"/>
+		</compiler>
+		<general allow_user_settings="false" execute_host_database_event="true">
+			<mover always_display_dialog="1"/>
+		</general>
+		<interface>
+			<developper allow_read_only_structure="false"/>
+			<user print_progress="false"/>
+		</interface>
+		<sql>
+			<publication port_number="1919"/>
+		</sql>
+		<server>
+			<network>
+				<options publication_name="4DPop Pictures Browser"/>
+			</network>
+		</server>
+		<web>
+			<standalone_server>
+				<options>
+					<web_processes timeout_for_inactives="5"/>
+					<filters allow_4dsync_urls="true"/>
+					<cache use_4d_web_cache="false"/>
+				</options>
+				<configuration automatic_session_management="false">
+					<hosts>
+						<host home_page="index.html" html_root="./DossierWeb/" id="0" name="Default"/>
+					</hosts>
+				</configuration>
+				<log>
+					<backup daily="" hourly="" monthly="" size="0" weekly=""/>
+				</log>
+				<misc/>
+			</standalone_server>
+			<remote>
+				<options>
+					<web_processes timeout_for_inactives="5"/>
+					<filters allow_4dsync_urls="true"/>
+					<cache use_4d_web_cache="false"/>
+				</options>
+				<configuration automatic_session_management="false"/>
+				<misc/>
+			</remote>
+		</web>
+	</com.4d>
+</preferences>

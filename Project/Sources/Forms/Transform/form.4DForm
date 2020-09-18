@@ -1,0 +1,312 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:Convert",
+	"windowMinWidth": 490,
+	"windowMinHeight": 400,
+	"width": 550,
+	"height": 470,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable3": {
+					"type": "input",
+					"top": 244,
+					"left": 33,
+					"width": 104,
+					"height": 96,
+					"sizingY": "move",
+					"dataSource": "<>Pic_display",
+					"dataSourceTypeHint": "picture",
+					"stroke": "#FFFFFF",
+					"class": "Default",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Popup Liste déroulante1": {
+					"type": "dropdown",
+					"top": 361,
+					"left": 193,
+					"width": 275,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "<>tTxt_Names",
+					"focusable": false,
+					"class": "System",
+					"method": "ObjectMethods/Popup Liste déroulante1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 395,
+					"left": 196,
+					"width": 270,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "<>Txt_fileName",
+					"class": "Default",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onGettingFocus"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 364,
+					"left": 37,
+					"width": 147,
+					"height": 16,
+					"sizingY": "move",
+					"class": "System",
+					"textAlign": "right",
+					"text": ":xliff:Format"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 395,
+					"left": 39,
+					"width": 147,
+					"height": 16,
+					"sizingY": "move",
+					"class": "System",
+					"textAlign": "right",
+					"text": ":xliff:Name"
+				},
+				"Case à cocher1": {
+					"type": "checkbox",
+					"top": 47,
+					"left": 33,
+					"width": 145,
+					"height": 17,
+					"dataSource": "<>b1",
+					"text": ":xliff:FlipHorizontally",
+					"class": "SystemSmall",
+					"focusable": false,
+					"method": "ObjectMethods/Case à cocher1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Case à cocher2": {
+					"type": "checkbox",
+					"top": 74,
+					"left": 33,
+					"width": 145,
+					"height": 17,
+					"dataSource": "<>b2",
+					"text": ":xliff:FlipVertically",
+					"class": "SystemSmall",
+					"focusable": false,
+					"method": "ObjectMethods/Case à cocher2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Case à cocher3": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 33,
+					"width": 145,
+					"height": 17,
+					"dataSource": "<>b3",
+					"text": ":xliff:FadeToGreyScale",
+					"class": "SystemSmall",
+					"focusable": false,
+					"method": "ObjectMethods/Case à cocher3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"dev.b.transparency": {
+					"type": "checkbox",
+					"top": 201,
+					"left": 33,
+					"width": 145,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "<>b4",
+					"text": ":xliff:Transparency",
+					"class": "SystemSmall",
+					"focusable": false,
+					"method": "ObjectMethods/dev.b.transparency.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 124,
+					"height": 16,
+					"class": "System",
+					"textAlign": "left",
+					"text": ":xliff:Transformations"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 428,
+					"left": 420,
+					"width": 110,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "OK",
+					"action": "accept",
+					"text": ":xliff:Convert",
+					"class": "System",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 428,
+					"left": 20,
+					"width": 110,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "<>bCancel",
+					"action": "cancel",
+					"text": ":xliff:CommonCancel",
+					"class": "System",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"pteview": {
+					"type": "input",
+					"top": 20,
+					"left": 197,
+					"width": 332,
+					"height": 320,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>Pic_Preview",
+					"dataSourceTypeHint": "picture",
+					"class": "Default",
+					"fill": "transparent",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"b.scale": {
+					"type": "checkbox",
+					"top": 130,
+					"left": 33,
+					"width": 145,
+					"height": 17,
+					"dataSource": "<>b5",
+					"text": ":xliff:Scale",
+					"class": "SystemSmall",
+					"focusable": false,
+					"method": "ObjectMethods/b.scale.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"dev.b.crop": {
+					"type": "checkbox",
+					"top": 173,
+					"left": 33,
+					"width": 145,
+					"height": 17,
+					"visibility": "hidden",
+					"dataSource": "<>b6",
+					"text": ".Crop",
+					"class": "SystemSmall",
+					"focusable": false,
+					"method": "ObjectMethods/dev.b.crop.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ruler.scale": {
+					"type": "ruler",
+					"top": 151,
+					"left": 59,
+					"width": 118,
+					"height": 21,
+					"visibility": "hidden",
+					"dataSource": "<>Lon_Scale",
+					"min": 10,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10,
+					"class": "SystemSmall",
+					"method": "ObjectMethods/ruler.scale.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"tip.scale": {
+					"type": "text",
+					"top": 151,
+					"left": 148,
+					"width": 30,
+					"height": 12,
+					"visibility": "hidden",
+					"fill": "#FFF596",
+					"stroke": "#444444",
+					"class": "SystemSmall",
+					"textAlign": "center",
+					"borderStyle": "solid",
+					"text": "<◊Lon_Scale>%"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	}
+}

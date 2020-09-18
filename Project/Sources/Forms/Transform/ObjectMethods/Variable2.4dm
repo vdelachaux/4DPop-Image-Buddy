@@ -1,0 +1,1 @@
+HIGHLIGHT TEXT:C210(Self:C308->; 1; Length:C16(doc_Txt_Path_Handler("get.name.short"; Self:C308->))+1)

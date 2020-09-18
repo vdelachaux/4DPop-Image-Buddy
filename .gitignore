@@ -48,3 +48,6 @@ Thumbs.db
 #--------------------------------
 # Added by user
 #--------------------------------
+
+Resources/php.ini
+Project/Trash/

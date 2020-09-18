@@ -1,0 +1,113 @@
+﻿{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Bar N°1",
+			"items": [
+				{
+					"link": 65537
+				},
+				{
+					"link": 65539
+				},
+				{
+					"link": 65541
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 65537,
+			"title": ":xliff:CommonFile",
+			"items": [
+				{
+					"title": ":xliff:CommonQuit",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 65539,
+			"title": ":xliff:CommonEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:CommonCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:CommonShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 65541,
+			"title": ":xliff:CommonMode",
+			"items": [
+				{
+					"title": ":xliff:CommonDesign",
+					"shortcutAccel": true,
+					"shortcutKey": "Y",
+					"action": "design"
+				},
+				{
+					"title": ":xliff:CommonUser",
+					"shortcutAccel": true,
+					"shortcutKey": "U",
+					"action": "userMode"
+				},
+				{
+					"title": ":xliff:CommonCustomMenus",
+					"enabled": false,
+					"state": "checked",
+					"shortcutAccel": true,
+					"shortcutKey": "I",
+					"action": "application"
+				}
+			]
+		}
+	]
+}

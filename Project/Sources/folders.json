@@ -1,0 +1,60 @@
+﻿{
+	"00_dev": {
+		"methods": [
+			"00_test"
+		]
+	},
+	"Component": {
+		"groups": [
+			"Private",
+			"Public"
+		]
+	},
+	"Private": {
+		"methods": [
+			"BROWSER_FILL",
+			"BROWSER_HANDLER",
+			"Browser_Lon_Folder_List",
+			"BROWSER_MENUS",
+			"BROWSER_SELECTION",
+			"COMPILER",
+			"preferences",
+			"RECOVER_WINDOW"
+		],
+		"forms": [
+			"Browser",
+			"Transform"
+		]
+	},
+	"Public": {
+		"methods": [
+			"Pictures_Browser",
+			"Pictures_Tool_Ondrop"
+		]
+	},
+	"Tools": {
+		"methods": [
+			"doc_DELETE_FOLDER",
+			"doc_DUPLICATE_FOLDER",
+			"doc_Txt_Path_Handler",
+			"env_CREATE_ON_SERVER",
+			"env_DELETE_ON_SERVER",
+			"env_Get_InfoPlist_Value",
+			"lstb_AUTOMATIC_SCROOLBARS",
+			"lsth_Lon_CountFirstLevelItems",
+			"mnu_a16_From_List",
+			"mnu_APPEND_SEPARATION_LINE",
+			"mnu_RELEASE_MENU",
+			"No_Error",
+			"obj_CENTER",
+			"POSIX_Path",
+			"server_CREATE_RESOURCES",
+			"server_DELETE_FILE",
+			"svg_Pic_copyright",
+			"svg_Pic_DrawBox",
+			"svg_Pic_DrawText",
+			"Tool_gTxt_BytesToString"
+		]
+	},
+	"trash": {}
+}
