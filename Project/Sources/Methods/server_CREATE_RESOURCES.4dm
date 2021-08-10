@@ -4,73 +4,74 @@
 // Created 28/05/08 by vdl
 // ----------------------------------------------------
 // Description
-//
+// 
 // ----------------------------------------------------
-C_BLOB:C604(${1})
-
-C_BLOB:C604($Blb_Buffer)
-C_BOOLEAN:C305($Boo_Document)
-C_LONGINT:C283($Lon_i; $Lon_Mode; $Lon_Offset; $Lon_Parameters)
-C_TEXT:C284($kTxt_separator; $Txt_Folder; $Txt_Path; $Txt_Structure_Folder)
+var $1 : Blob
 
 If (False:C215)
-	C_BLOB:C604(server_CREATE_RESOURCES; ${1})
+	C_BLOB:C604(server_CREATE_RESOURCES; $1)
 End if 
 
-$Lon_Parameters:=Count parameters:C259
+var $folderSeparator; $pathname; $structureFolder : Text
+var $isFile : Boolean
+var $compressed; $i; $offset : Integer
+var $x : Blob
 
-If ($Lon_Parameters>0)
+If (Count parameters:C259>0)
 	
-	$Txt_Structure_Folder:=Get 4D folder:C485(Database folder:K5:14; *)
-	$kTxt_separator:=$Txt_Structure_Folder[[Length:C16($Txt_Structure_Folder)]]
+	$structureFolder:=Get 4D folder:C485(Database folder:K5:14; *)
+	$folderSeparator:=$structureFolder[[Length:C16($structureFolder)]]
 	
-	For ($Lon_i; 1; $Lon_Parameters; 1)
+	For ($i; 1; Count parameters:C259; 1)
 		
-		$Lon_Offset:=0
+		CLEAR VARIABLE:C89($offset)
 		
-		BLOB PROPERTIES:C536(${$Lon_i}; $Lon_Mode)
-		If ($Lon_Mode#Is not compressed:K22:11)
-			EXPAND BLOB:C535(${$Lon_i})
+		BLOB PROPERTIES:C536($1; $compressed)
+		
+		If ($compressed#Is not compressed:K22:11)
+			
+			EXPAND BLOB:C535($1)
+			
 		End if 
 		
-		BLOB TO VARIABLE:C533(${$Lon_i}; $Txt_Path; $Lon_Offset)
+		BLOB TO VARIABLE:C533($1; $pathname; $offset)
 		
 		If (OK=1)
-			$Txt_Path:=Replace string:C233($Txt_Path; "/"; $kTxt_separator)
-			$Txt_Path:=$Txt_Structure_Folder+$Txt_Path
-			$Boo_Document:=($Txt_Path[[Length:C16($Txt_Path)]]#$kTxt_separator)
-			If ($Boo_Document)
-				BLOB TO VARIABLE:C533(${$Lon_i}; $Blb_Buffer; $Lon_Offset)
+			
+			$pathname:=Replace string:C233($pathname; "/"; $folderSeparator)
+			$pathname:=$structureFolder+$pathname
+			$isFile:=($pathname[[Length:C16($pathname)]]#$folderSeparator)
+			
+			If ($isFile)
+				
+				BLOB TO VARIABLE:C533($1; $x; $offset)
+				
 			End if 
 		End if 
 		
 		If (OK=1)
 			
-			
-			
-			If (Test path name:C476($Txt_Path)=Is a document:K24:1)
-				DELETE DOCUMENT:C159($Txt_Path)
+			If (Test path name:C476($pathname)=Is a document:K24:1)
+				
+				DELETE DOCUMENT:C159($pathname)
+				
 			Else 
-				If ($Boo_Document)
-					$Txt_Folder:=doc_Txt_Path_Handler("get.parent.path"; $Txt_Path)
+				
+				If ($isFile)
+					
 				Else 
-					doc_Txt_Path_Handler("create.hierarchy"; $Txt_Path)
+					
 				End if 
 			End if 
 			
-			If ((OK=1) & $Boo_Document)
+			If ((OK=1) & $isFile)
 				
-				BLOB TO DOCUMENT:C526($Txt_Path; $Blb_Buffer)
+				BLOB TO DOCUMENT:C526($pathname; $x)
 				
 			End if 
-			
 		End if 
-		
 	End for 
 	
 	NOTIFY RESOURCES FOLDER MODIFICATION:C1052
 	
 End if 
-
-
-

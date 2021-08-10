@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="15">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="16">
 	<com.4d>
 		<database>
 			<cache size_fixed="32" size_maximum="100" size_reserved="128"/>
@@ -6,8 +6,9 @@
 			<misc standard_xpath="false"/>
 		</database>
 		<compiler>
-			<options compilation_path="3" fat_binary="true"/>
+			<options compilation_path="3" fat_binary="true" target="all"/>
 			<typage default_for_button="2"/>
+			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
 		</compiler>
 		<general allow_user_settings="false" execute_host_database_event="true">
 			<mover always_display_dialog="1"/>
