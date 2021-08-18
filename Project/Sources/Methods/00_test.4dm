@@ -1,5 +1,5 @@
 //%attributes = {}
-BROWSER_HANDLER
+//BROWSER_HANDLER
 
 
 

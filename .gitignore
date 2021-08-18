@@ -1,4 +1,4 @@
-﻿#--------------------------------
+#--------------------------------
 # Ignore invisible files/folders
 #--------------------------------
 .*
@@ -51,3 +51,4 @@ Thumbs.db
 
 Resources/php.ini
 Project/Trash/
+Libraries/lib4d-arm64.dylib

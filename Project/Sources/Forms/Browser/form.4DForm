@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowTitle": ":xliff:WindowTitle",
 	"windowMinWidth": 355,
@@ -27,9 +27,9 @@
 				"_Copyright": {
 					"type": "input",
 					"top": 0,
-					"left": -3,
+					"left": 0,
 					"width": 17,
-					"height": 152,
+					"height": 190,
 					"dataSource": "<>kPic_Copyright",
 					"dataSourceTypeHint": "picture",
 					"focusable": false,
@@ -37,7 +37,8 @@
 					"borderStyle": "none",
 					"enterable": false,
 					"contextMenu": "none",
-					"dragging": "none"
+					"dragging": "none",
+					"pictureFormat": "proportionalTopLeft"
 				}
 			}
 		},
@@ -749,5 +750,10 @@
 			"Vue 8": {},
 			"Vue 9": {}
 		}
+	},
+	"geometryStamp": 9,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
 	}
 }
