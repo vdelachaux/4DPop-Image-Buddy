@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"executedOnServer":true}
+//%attributes = {"invisible":true}
 // ----------------------------------------------------
 // Method : server_CREATE_RESOURCES
 // Created 28/05/08 by vdl

@@ -1,16 +1,24 @@
 {
-	"00_dev": {
+	"_o_": {},
+	"(00_dev)": {},
+	"(Component)": {
+		"groups": [
+			"(Private)"
+		]
+	},
+	"(Private)": {},
+	"(Public)": {},
+	"(Tools)": {},
+	"# 🚧 DEV": {
 		"methods": [
 			"00_test"
 		]
 	},
-	"Component": {
-		"groups": [
-			"Private",
-			"Public"
-		]
-	},
-	"Private": {
+	"#️⃣ API": {},
+	"♻️ LIBRAIRIES": {},
+	"⚙️ MACROS": {},
+	"👥 NAMESPACE": {},
+	"📦 COMPONENT": {
 		"methods": [
 			"BROWSER_FILL",
 			"BROWSER_HANDLER",
@@ -26,13 +34,7 @@
 			"Transform"
 		]
 	},
-	"Public": {
-		"methods": [
-			"Pictures_Browser",
-			"Pictures_Tool_Ondrop"
-		]
-	},
-	"Tools": {
+	"🛠️ Tools": {
 		"methods": [
 			"doc_DELETE_FOLDER",
 			"doc_DUPLICATE_FOLDER",
@@ -56,5 +58,20 @@
 			"Tool_gTxt_BytesToString"
 		]
 	},
-	"trash": {}
+	"4️⃣ 4DPop": {
+		"methods": [
+			"_4DPopImageBuddy",
+			"browser",
+			"COMPILER_4DPop",
+			"onDrop"
+		]
+	},
+	"trash": {
+		"groups": [
+			"(00_dev)",
+			"(Component)",
+			"(Public)",
+			"(Tools)"
+		]
+	}
 }

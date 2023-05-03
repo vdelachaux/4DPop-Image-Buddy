@@ -120,7 +120,9 @@ Case of
 		For ($Lon_i; 1; $Lon_NewColumnNumbers; 1)
 			
 			$Ptr_Col:=Get pointer:C304("<>tPic_"+String:C10($Lon_i))
+			//%W-518.5
 			ARRAY PICTURE:C279($Ptr_Col->; $Lon_LineNumber)
+			//%W+518.5
 			
 			If ($Lon_i>$Lon_ColumnNumber)
 				
@@ -149,7 +151,9 @@ Case of
 			Else 
 				
 				$Txt_ColName:="Column_"+String:C10($Lon_i)
+				//%W-518.5
 				ARRAY PICTURE:C279($Ptr_Col->; $Lon_LineNumber)
+				//%W+518.5
 				LISTBOX SET COLUMN WIDTH:C833(*; $Txt_ColName; $Lon_ColumnWidth)
 				
 			End if 

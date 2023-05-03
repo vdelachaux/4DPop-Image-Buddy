@@ -331,7 +331,7 @@ Else
 							//  ` ----------------------------------------------------
 							//Sinon
 							
-							<>Lon_Error:=0
+							ERROR:=0
 							ON ERR CALL:C155("No_Error")
 							READ PICTURE FILE:C678($Txt_Path+$tTxt_Files{$Lon_i}; $Pic_Buffer; *)
 							ON ERR CALL:C155("")
@@ -341,9 +341,9 @@ Else
 								: (OK=0)
 									
 									//.....................................................
-								: (<>Lon_Error#0)
+								: (ERROR#0)
 									
-									ALERT:C41(".Error Nº "+String:C10(<>Lon_Error)+" reading file \""+$tTxt_Files{$Lon_i}+"\"")
+									ALERT:C41(".Error Nº "+String:C10(ERROR)+" reading file \""+$tTxt_Files{$Lon_i}+"\"")
 									SET TEXT TO PASTEBOARD:C523($tTxt_Files{$Lon_i})
 									
 									//.....................................................

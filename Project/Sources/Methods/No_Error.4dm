@@ -1,2 +1,2 @@
 //%attributes = {"invisible":true}
-<>Lon_Error:=ERROR
+//ERROR:=ERROR

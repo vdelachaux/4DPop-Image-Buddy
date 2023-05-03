@@ -59,7 +59,7 @@ ARRAY BOOLEAN:C223(<>tLstb_Picture; 0)
 //C_ENTIER LONG(<>bUtil;<>bUtil_2;<>bAction;<>bFolderMenu)
 C_LONGINT:C283(<>bSplitter_1; <>bSplitter_2)
 
-C_LONGINT:C283(<>Lon_Error)
+C_LONGINT:C283(ERROR)
 
 C_LONGINT:C283(<>Lon_Timer_Event_Event)
 C_LONGINT:C283(<>Lon_UID; <>Lon_File_Number)

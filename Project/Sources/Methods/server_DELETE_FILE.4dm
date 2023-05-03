@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"executedOnServer":true}
+//%attributes = {"invisible":true}
 // ----------------------------------------------------
 // Method : server_DELETE_FILE
 // Created 20/06/08 by vdl
