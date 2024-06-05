@@ -5,10 +5,6 @@
 // ----------------------------------------------------
 #DECLARE($data : Object)
 
-If (False:C215)
-	C_OBJECT:C1216(onDrop; $1)
-End if 
-
 var $name; $pathname : Text
 var $picture : Picture
 var $dropPosition; $indx : Integer

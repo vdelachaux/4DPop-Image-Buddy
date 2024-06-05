@@ -62,7 +62,6 @@
 		"methods": [
 			"_4DPopImageBuddy",
 			"browser",
-			"COMPILER_4DPop",
 			"onDrop"
 		]
 	},

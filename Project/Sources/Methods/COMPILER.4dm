@@ -88,15 +88,6 @@ C_PICTURE:C286(<>Pic_Preview)
 
 C_TEXT:C284(<>Dom_thumb; <>Dom_resources)
 
-
-If (False:C215)  //Public
-	
-	C_POINTER:C301(Pictures_Browser; $1)  //4DPop tool EntryPoint
-	
-	C_POINTER:C301(Pictures_Tool_Ondrop; $1)
-	
-End if 
-
 If (False:C215)  //Private
 	
 	C_POINTER:C301(BROWSER_FILL; $1)
