@@ -1,23 +1,9 @@
 {
-	"_o_": {},
-	"(00_dev)": {},
-	"(Component)": {
-		"groups": [
-			"(Private)"
-		]
-	},
-	"(Private)": {},
-	"(Public)": {},
-	"(Tools)": {},
 	"# 🚧 DEV": {
 		"methods": [
 			"00_test"
 		]
 	},
-	"#️⃣ API": {},
-	"♻️ LIBRAIRIES": {},
-	"⚙️ MACROS": {},
-	"👥 NAMESPACE": {},
 	"📦 COMPONENT": {
 		"methods": [
 			"BROWSER_FILL",
@@ -65,12 +51,5 @@
 			"onDrop"
 		]
 	},
-	"trash": {
-		"groups": [
-			"(00_dev)",
-			"(Component)",
-			"(Public)",
-			"(Tools)"
-		]
-	}
+	"trash": {}
 }
