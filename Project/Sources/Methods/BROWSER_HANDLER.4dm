@@ -128,7 +128,7 @@ Else
 				
 			Else 
 				
-				$Lon_Window:=Open window:C153($Lon_Left; $Lon_Top; $Lon_Right; $Lon_Bottom; Plain window:K34:13+Texture appearance:K34:17; Get localized string:C991("WindowTitle"); "No_Error")
+				$Lon_Window:=Open window:C153($Lon_Left; $Lon_Top; $Lon_Right; $Lon_Bottom; Plain window:K34:13+Texture appearance:K34:17; Localized string:C991("WindowTitle"); "No_Error")
 				RECOVER_WINDOW
 				
 			End if 
@@ -371,7 +371,7 @@ Else
 											
 										End if 
 										
-										$Pic_Title:=svg_Pic_DrawText($Txt_Name; 10; ""; 0; $kLon_thumbnailWidth; 24; ""; 0; 10; Align center:K42:3; 0; 0)
+										$Pic_Title:=svg_Pic_DrawText($Txt_Name; 10; ""; 0; $kLon_thumbnailWidth; 24; ""; 0; 10; Align center:K42:3; 0)
 										
 										COMBINE PICTURES:C987($Pic_Cellule; <>kPic_Cellule; Superimposition:K61:10; $Pic_Title; 0; $kLon_celluleWidth-$kLon_offset-20)
 										COMBINE PICTURES:C987(<>tPic_thumbnails{<>Lon_File_Number}; $Pic_Cellule; Superimposition:K61:10; <>tPic_thumbnails{<>Lon_File_Number}; $kLon_offset; $kLon_offset)

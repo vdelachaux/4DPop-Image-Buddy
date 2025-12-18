@@ -6,11 +6,7 @@
 	<dict>
 		<key>Resources/4DPop.json</key>
 		<data>
-		QabNqDdJst7BzsnXCXIr/ynmmjY=
-		</data>
-		<key>Resources/4DPop.png</key>
-		<data>
-		Wk5cnVCQf+FRkS0vFj58rjG8lXI=
+		EfPAzIY9NHPXvfdfqhUMBW2oeE8=
 		</data>
 		<key>Resources/AF.png</key>
 		<data>
@@ -86,7 +82,7 @@
 		</data>
 		<key>Resources/InfoPlist.strings</key>
 		<data>
-		MOVKRlgVV9MLjRgbTOn8DJFcAVs=
+		47bAEhjkI2umqbRgftBD6j5razc=
 		</data>
 		<key>Resources/SearchBox/Criteria_Left.png</key>
 		<data>
@@ -404,6 +400,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/logo.svg</key>
+		<data>
+		hdvjFGvSNA2wGUsoYhpJJs2Jxks=
+		</data>
 		<key>Resources/php.ini</key>
 		<data>
 		viRLm3jOkOu96TZ6pL/XwRuYhJw=
@@ -423,30 +423,23 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			CIiOBzuMrNFORRws9hyJnCXh1dg=
+			OK8FjDUXmgJX7bS/FZjgYwfA7xs=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"08888e073b8cacd14e451c2cf61c899c25e1d5d8"</string>
+			<string>cdhash H"38af058c35179a0257edb4bf1598e06307c0ef1b"</string>
 		</dict>
 		<key>Libraries/lib4d-arm64.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTyqqYLztPoyMPMEW1Fe5pgNLOYnlfTzO7Waf5epJPI=
+			XBQ0UUbcvEsOEfnHmFK20W/5TAM6N6wSPyeHbl6PNgQ=
 			</data>
 		</dict>
 		<key>Resources/4DPop.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Hj3b4+hgx5aayolYI0+NH5XjF5gJ4vRQgA7xzThEgU=
-			</data>
-		</dict>
-		<key>Resources/4DPop.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DSjZoT3nfhpiUYfAnvCXvcV7SMC11btrJlQmhItiG4s=
+			tRFwqFC45Sx8ioF3r0yRCaW3mFr+pPhP/Mr1AkbO02s=
 			</data>
 		</dict>
 		<key>Resources/AF.png</key>
@@ -579,7 +572,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RbtsYJcszWEQWPRgrNj4JjXQl5AyVIUFwAr9Rt+EMBY=
+			osWNfqjcmU+21ph3TLS/fbF0whpvVfMJiXYQPl0g5dI=
 			</data>
 		</dict>
 		<key>Resources/SearchBox/Criteria_Left.png</key>
@@ -945,6 +938,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>Resources/logo.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cbJI/fe8XjYaWKZUFb91aIVVVi4z8fuJtRtADfLqLlI=
+			</data>
 		</dict>
 		<key>Resources/php.ini</key>
 		<dict>

@@ -46,23 +46,23 @@ Case of
 		
 		If (Size of array:C274($tLon_selected)=1)
 			
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonOpen"))
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonOpen"))
 			SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "picture.open")
 			
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonRename")+"...")
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonRename")+"...")
 			SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "picture.rename")
 			
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonDuplicate"))
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonDuplicate"))
 			SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "picture.duplicate")
 			
 			mnu_APPEND_SEPARATION_LINE($Mnu_main)
 			
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonMenuItemCopy"))
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonMenuItemCopy"))
 			SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "picture.copy")
 			
 			mnu_APPEND_SEPARATION_LINE($Mnu_main)
 			
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("Convert")+"…")
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("Convert")+"…")
 			SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "picture.Transform")
 			
 		End if 
@@ -80,7 +80,7 @@ Case of
 			
 			If (Size of array:C274($tLon_selected)=1)
 				
-				APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("Transparency"))
+				APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("Transparency"))
 				
 				If ($Boo_remote)
 					
@@ -98,7 +98,7 @@ Case of
 			
 			mnu_APPEND_SEPARATION_LINE($Mnu_main)
 			
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonDelete"))
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonDelete"))
 			//Si (◊Boo_Remote_Mode)
 			//INACTIVER LIGNE MENU($a16_Menu;-1)
 			//Sinon
@@ -115,7 +115,7 @@ Case of
 		GET LIST ITEM:C378(<>Lst_resources; $Lon_selected; $Lon_reference; $Txt_element; $Lst_sublist; $Boo_expanded)
 		GET LIST ITEM PARAMETER:C985(<>Lst_resources; $Lon_reference; "path"; $Txt_path)
 		
-		APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ImportPICTResourcesFromFile"))
+		APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ImportPICTResourcesFromFile"))
 		SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "import.PICT")
 		
 		If ($Boo_remote)
@@ -124,7 +124,7 @@ Case of
 			
 		End if 
 		
-		APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ImportCicnResourcesFromFile"))
+		APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ImportCicnResourcesFromFile"))
 		SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "import.cicn")
 		If ($Boo_remote)
 			
@@ -132,7 +132,7 @@ Case of
 			
 		End if 
 		
-		APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ImportFromPictureLibrary"))
+		APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ImportFromPictureLibrary"))
 		SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "import.library")
 		
 		If ($Boo_remote)
@@ -159,7 +159,7 @@ Case of
 		GET LIST ITEM:C378(<>Lst_resources; $Lon_selected; $Lon_reference; $Txt_element; $Lst_sublist; $Boo_expanded)
 		GET LIST ITEM PARAMETER:C985(<>Lst_resources; $Lon_reference; "path"; $Txt_path)
 		
-		APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("NewFolder")+"…")
+		APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("NewFolder")+"…")
 		SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "folder.add")
 		
 		If ($Lon_selected>0)
@@ -169,41 +169,41 @@ Case of
 				If ($Lon_reference#1)
 					
 					mnu_APPEND_SEPARATION_LINE($Mnu_main)
-					APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonRename")+"...")
+					APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonRename")+"...")
 					SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "folder.rename")
 					
-					APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonDuplicate"))
+					APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonDuplicate"))
 					SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "folder.duplicate")
 					
 					mnu_APPEND_SEPARATION_LINE($Mnu_main)
-					APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonDelete"))
+					APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonDelete"))
 					SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "folder.delete")
 					
 				End if 
 				
 				mnu_APPEND_SEPARATION_LINE($Mnu_main)
-				APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ShowOnDisk"))
+				APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ShowOnDisk"))
 				SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "folder.open")
 				
 				mnu_APPEND_SEPARATION_LINE($Mnu_main)
-				APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ImportPICTResourcesFromFile"))
+				APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ImportPICTResourcesFromFile"))
 				SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "import.PICT")
 				
-				APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ImportCicnResourcesFromFile"))
+				APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ImportCicnResourcesFromFile"))
 				SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "import.cicn")
 				
 				PICTURE LIBRARY LIST:C564($tLon_IDs; $tTxt_names)
 				
 				If (Size of array:C274($tLon_IDs)>0)
 					
-					APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("ImportFromPictureLibrary"))
+					APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("ImportFromPictureLibrary"))
 					SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "import.library")
 					
 				End if 
 			End if 
 			
 			mnu_APPEND_SEPARATION_LINE($Mnu_main)
-			APPEND MENU ITEM:C411($Mnu_main; Get localized string:C991("CommonRefresh"))
+			APPEND MENU ITEM:C411($Mnu_main; Localized string:C991("CommonRefresh"))
 			SET MENU ITEM PARAMETER:C1004($Mnu_main; -1; "folder.refresh")
 			
 		End if 
@@ -299,7 +299,7 @@ If (Count menu items:C405($Mnu_main)>0)
 						CONFIRM:C162(\
 							Replace string:C233(\
 							Replace string:C233(\
-							Get localized string:C991("YouWantToImport"); \
+							Localized string:C991("YouWantToImport"); \
 							"{ImageNumber}"; String:C10($Lon_countPictures)); \
 							"{destFolder}"; doc_Txt_Path_Handler("get.name"; $Txt_path)))
 						
@@ -322,7 +322,7 @@ If (Count menu items:C405($Mnu_main)>0)
 									
 								Else 
 									
-									GET ICON RESOURCE:C517($tLon_IDs{$Lon_i}; $Pic_buffer; $Gmt_resources)
+									_O_GET ICON RESOURCE:C517($tLon_IDs{$Lon_i}; $Pic_buffer; $Gmt_resources)
 									
 								End if 
 								
@@ -434,15 +434,15 @@ If (Count menu items:C405($Mnu_main)>0)
 			
 			If ($Lon_count=1)
 				
-				$Txt_message:=Replace string:C233(Get localized string:C991("DeleteFile"); "{name}"; <>tTxt_fileNames{$Lon_selected})
+				$Txt_message:=Replace string:C233(Localized string:C991("DeleteFile"); "{name}"; <>tTxt_fileNames{$Lon_selected})
 				
 			Else 
 				
-				$Txt_message:=Replace string:C233(Get localized string:C991("DeleteFiles"); "{number}"; String:C10($Lon_count))
+				$Txt_message:=Replace string:C233(Localized string:C991("DeleteFiles"); "{number}"; String:C10($Lon_count))
 				
 			End if 
 			
-			CONFIRM:C162($Txt_message; Get localized string:C991("CommonDelete"))
+			CONFIRM:C162($Txt_message; Localized string:C991("CommonDelete"))
 			
 			If (OK=1)
 				
@@ -479,7 +479,7 @@ If (Count menu items:C405($Mnu_main)>0)
 			Repeat 
 				
 				$Txt_fileName:=Replace string:C233(<>tTxt_fileNames{$Lon_selected}; "."+$Txt_extension; "")
-				$Txt_fileName:=$Txt_fileName+Get localized string:C991("BrowserCopy")+String:C10($Lon_x; " ##); ##);)")
+				$Txt_fileName:=$Txt_fileName+Localized string:C991("BrowserCopy")+String:C10($Lon_x; " ##); ##);)")
 				$Txt_fileName:=doc_Txt_Path_Handler("set.extension"; $Txt_fileName; $Txt_extension)
 				$Txt_targetPath:=Replace string:C233($Txt_path; <>tTxt_fileNames{$Lon_selected}; $Txt_fileName)
 				$Lon_x:=$Lon_x+1
@@ -508,7 +508,7 @@ If (Count menu items:C405($Mnu_main)>0)
 			
 			$Txt_extension:=doc_Txt_Path_Handler("get.extensions"; <>tTxt_fileNames{$Lon_selected})
 			
-			$Txt_fileName:=Request:C163(Get localized string:C991("Name"); <>tTxt_fileNames{$Lon_selected}; Get localized string:C991("CommonRename"))
+			$Txt_fileName:=Request:C163(Localized string:C991("Name"); <>tTxt_fileNames{$Lon_selected}; Localized string:C991("CommonRename"))
 			
 			If (OK=1)
 				
@@ -541,7 +541,7 @@ If (Count menu items:C405($Mnu_main)>0)
 						
 					End if 
 					
-					$Pic_title:=svg_Pic_DrawText($Txt_fileName; 10; ""; 0; $kLon_Thumbnail_Width; 24; ""; 0; 10; Align center:K42:3; 0; 0)
+					$Pic_title:=svg_Pic_DrawText($Txt_fileName; 10; ""; 0; $kLon_Thumbnail_Width; 24; ""; 0; 10; Align center:K42:3; 0)
 					READ PICTURE FILE:C678(<>tTxt_filePaths{$Lon_selected}; <>tPic_thumbnails{$Lon_selected})
 					CREATE THUMBNAIL:C679(<>tPic_thumbnails{$Lon_selected}; <>tPic_thumbnails{$Lon_selected}; $kLon_Thumbnail_Width-$kLon_offset; $kLon_Thumbnail_Width-$kLon_offset; Scaled to fit prop centered:K6:6)
 					
@@ -579,7 +579,7 @@ If (Count menu items:C405($Mnu_main)>0)
 				
 				If ($Boo_Replace)
 					
-					CONFIRM:C162(Get localized string:C991("AFileWithThisNameAlreadyExist"))
+					CONFIRM:C162(Localized string:C991("AFileWithThisNameAlreadyExist"))
 					
 					If (OK=1)
 						
@@ -623,7 +623,7 @@ If (Count menu items:C405($Mnu_main)>0)
 							
 						End if 
 						
-						$Pic_title:=svg_Pic_DrawText($Txt_fileName; 10; ""; 0; $kLon_Thumbnail_Width; 24; ""; 0; 10; Align center:K42:3; 0; 0)
+						$Pic_title:=svg_Pic_DrawText($Txt_fileName; 10; ""; 0; $kLon_Thumbnail_Width; 24; ""; 0; 10; Align center:K42:3; 0)
 						READ PICTURE FILE:C678(<>tTxt_filePaths{$Lon_selected}; <>tPic_thumbnails{$Lon_selected})
 						CREATE THUMBNAIL:C679(<>tPic_thumbnails{$Lon_selected}; <>tPic_thumbnails{$Lon_selected}; $kLon_Thumbnail_Width-$kLon_offset; $kLon_Thumbnail_Width-$kLon_offset; Scaled to fit prop centered:K6:6)
 						
@@ -673,7 +673,7 @@ If (Count menu items:C405($Mnu_main)>0)
 			//______________________________________________________
 		: ($Mnu_choice="folder.add")
 			
-			$Txt_folderName:=Request:C163(Get localized string:C991("FolderName"); Get localized string:C991("NewFolder"); Get localized string:C991("CommonCreate"))
+			$Txt_folderName:=Request:C163(Localized string:C991("FolderName"); Localized string:C991("NewFolder"); Localized string:C991("CommonCreate"))
 			
 			If (OK=1)
 				
@@ -744,7 +744,7 @@ If (Count menu items:C405($Mnu_main)>0)
 			
 			$Txt_parentPath:=doc_Txt_Path_Handler("get.parent.path"; $Txt_path)
 			$Txt_folderName:=doc_Txt_Path_Handler("get.name"; $Txt_path)
-			$Txt_folderName:=Request:C163(Replace string:C233(Get localized string:C991("NewName"); "{name}"; $Txt_folderName); $Txt_folderName; Get localized string:C991("CommonRename"))
+			$Txt_folderName:=Request:C163(Replace string:C233(Localized string:C991("NewName"); "{name}"; $Txt_folderName); $Txt_folderName; Localized string:C991("CommonRename"))
 			
 			If (OK=1)
 				
@@ -763,7 +763,7 @@ If (Count menu items:C405($Mnu_main)>0)
 			//______________________________________________________
 		: ($Mnu_choice="folder.delete")
 			
-			CONFIRM:C162(Replace string:C233(Get localized string:C991("DeleteFolder"); "{name}"; doc_Txt_Path_Handler("get.name"; $Txt_path)); Get localized string:C991("CommonDelete"))
+			CONFIRM:C162(Replace string:C233(Localized string:C991("DeleteFolder"); "{name}"; doc_Txt_Path_Handler("get.name"; $Txt_path)); Localized string:C991("CommonDelete"))
 			
 			If (OK=1)
 				
@@ -786,7 +786,7 @@ If (Count menu items:C405($Mnu_main)>0)
 			Repeat 
 				
 				$Txt_folderName:=doc_Txt_Path_Handler("get.name"; $Txt_path)
-				$Txt_folderName:=$Txt_folderName+Get localized string:C991("BrowserCopy")+String:C10($Lon_x; " ##); ##);)")
+				$Txt_folderName:=$Txt_folderName+Localized string:C991("BrowserCopy")+String:C10($Lon_x; " ##); ##);)")
 				$Txt_targetPath:=$Txt_parentPath+$Txt_folderName+Folder separator:K24:12
 				$Lon_x:=$Lon_x+1
 				
